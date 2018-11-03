@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2018_11_02_202503) do
     t.index ["message_id"], name: "index_comments_on_message_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
+ActiveRecord::Schema.define(version: 2018_11_02_194917) do
 
   create_table "messages", force: :cascade do |t|
     t.string "title"
