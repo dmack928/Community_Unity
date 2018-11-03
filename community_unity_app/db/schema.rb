@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2018_11_02_202503) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "comments", force: :cascade do |t|
     t.text "content"
     t.integer "message_id"
