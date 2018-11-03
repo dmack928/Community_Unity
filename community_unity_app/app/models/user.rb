@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+ has_many :messages
+ has_many :comments
   has_many :messages
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
