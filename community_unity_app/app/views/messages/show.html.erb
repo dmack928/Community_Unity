@@ -1,4 +1,5 @@
 <h2><%= @message.title %></h2>
+<p>Created By <%= @message.user.email %> <%= time_ago_in_words(@message.created_at) %></p>
 <p><%= @message.description %></p>
 
 <h3>Comments:</h3>
