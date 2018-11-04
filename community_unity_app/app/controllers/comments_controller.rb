@@ -1,10 +1,9 @@
 class CommentsController < ApplicationController
-
-before_action :find_message, only: [:create, :edit, :update, :destroy]
+  before_action :find_message, only: [:create, :edit, :update, :destroy]
   before_action :find_comment, only: [:edit, :update, :destroy]
 
   def create
-
+    # creates a comment with respect to the message
     @comment = @message.comments.create(comment_params)
     @comment.user_id = current_user.id
 
@@ -45,5 +44,4 @@ before_action :find_message, only: [:create, :edit, :update, :destroy]
       @comment = @message.comments.find(params[:id])
     end
 
-  end
-
+end
