@@ -9,6 +9,12 @@
 <h3>Reply to Message</h3>
 <%= render 'comments/form' %>
 
-<%= link_to "Home", root_path %>
-<%= link_to "Edit",edit_message_path(@message) %>
-<%= link_to "Delete",message_path(@message), method: :delete, data: { confirm: "Are you sure, this can't be undone"} %>
+  <%= link_to "Home", root_path %>
+  <!--only allow edit and destroy links appear for authors of messages. -->
+      <% if user_signed_in? %>
+      <% if @message.user_id == current_user.id %>
+        <%= link_to "Edit", edit_message_path(@message), class: "btn btn-default" %>
+        <%= link_to "Delete", message_path(@message), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
+      <% end %>
+    <% end %>
+

@@ -1,6 +1,8 @@
 class CommentsController < ApplicationController
   before_action :find_message, only: [:create, :edit, :update, :destroy]
   before_action :find_comment, only: [:edit, :update, :destroy]
+  #prevents users not signed in from commenting on posts
+  before_action :authenticate_user!
 
   def show
   end
