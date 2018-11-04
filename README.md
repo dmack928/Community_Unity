@@ -22,7 +22,7 @@ The idea of Community Unity is a place where people can connect with their commu
 -   Ruby On Rails(RoR)
 -   User Authentication
 -   Google captcha / email verication
--   Bulma
+-   Bootstrap
 -   Flexbox
 
 ## Ideology:
