@@ -2,5 +2,4 @@
 <% @messages.each do |message| %>
   <h2><%= message.title %></h2>
   <%= link_to "View Message", message, class: "btn-custom" %>
-  <%= link_to "New Message", new_message_path %>
 <% end %>
