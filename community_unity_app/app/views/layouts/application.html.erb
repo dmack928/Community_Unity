@@ -22,10 +22,11 @@
             <% else %>
             <li><%= link_to "Log In", new_user_session_path %></li>
             <% end %>
-          </ul>
-          <% if user_signed_in? %>
-          <p><%= link_to "New Message", new_message_path, class:"navbar-right navbar-text navbar-link"%></p>
+
+          <li><% if user_signed_in? %>
+          <p><%= link_to "New Message", new_message_path, class:"navbar-right navbar-text navbar-link"%></p></li>
           <% end %>
+        </ul>
       </div>
     </div>
   </div>
