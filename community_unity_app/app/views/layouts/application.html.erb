@@ -11,7 +11,7 @@
 
   <body>
 
-<div class="navbar navbar-default">
+<nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
           <%= link_to "Community Unity", root_path, class:"navbar-brand" %>
@@ -29,11 +29,15 @@
         </ul>
       </div>
     </div>
-  </div>
+  </nav>
 
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
-    <%= yield %>
+
+  <div class="container">
+      <%= yield %>
+  </div>
+
   </body>
 
   <!-- Footer -->
