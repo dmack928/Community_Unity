@@ -20,10 +20,12 @@ The idea of Community Unity is a place where people can connect with their commu
 
 ## Technologies:
 -   Ruby On Rails(RoR)
+-   Ruby
+-   Postgres
 -   User Authentication
 -   Google captcha / email verication
 -   Bootstrap
--   Flexbox
+
 
 ## Ideology:
 
