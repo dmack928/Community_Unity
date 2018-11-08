@@ -1,0 +1,5 @@
+{
+  "peerDependencies": {
+    "rimraf": "^2.6.2"
+  }
+}
